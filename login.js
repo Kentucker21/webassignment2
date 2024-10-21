@@ -34,7 +34,7 @@ loginbutton.addEventListener("click",(e)=>{
     }
 
     if(enteredName==username&&enteredPass==password){
-    window.open("index.html")
+    window.open("index2.html")
     }
 
     console.log("loho")
