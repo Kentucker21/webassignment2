@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    min-width: 100%;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #1b83ff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li {
+    text-decoration: none;
+    color:#f5f5f5;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#f5f5f5; 
+}
+
+nav ul{
+    display: flex;
+    gap: 2em;
+    
+    align-items: center;
+    font-size: 1.1em;
+}
+nav ul li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    background-color: #1b83ff;
+    justify-content: space-between;
+    width: 80%;
+    
+    
+}
+.logo a img{
+    width: 50px;
+}
+.logo a {
+    text-decoration: none;
+display: flex;
+gap: 0.5em;
+
+color:#f5f5f5;
+}
+.logo a span {
+    font-size: 25px;
+    margin-top:0.5em;
+}
+
+
+.hamburger{
+    position: absolute;
+    right: 0.6em;
+    top: 10px;
+    display: none;
+}
+.hamburger button{
+    width: 30px;
+    font-size: 1.2em;
+    color: #f5f5f5;
+    background: none;
+    border: none;
+}
+
+/*Mobile menu*/
+.mobile-men{
+    position: absolute;
+    top: 0;
+    width: 60%;
+    left: 0.6em;
+    display: none;
+    z-index: 1;
+
+}
+.mobile-men button{
+    margin-top: 50px;
+   width: 30px;
+   font-size: 1.2em;
+}
+
+@media(max-width:900px){
+    nav ul{
+        display: none;
+    }
+
+    .mobile-nav{
+        width: 100vw;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    gap: 0;
+    font-size: 1.1em;
+}
+.mobile-nav a{
+    list-style: none;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.active{
+    display: block;
+}
+
+
+.hero{
+    background-color: #1b83ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+@media (max-width:900px) {
+    .hero{
+        flex-direction: column;
+        
+    }
+    .hero-text{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .hero-img img{
+        margin-left: 250px;
+    }
+    .hero{
+        height: 100%;
+    }
+}
+
+.hero-img img{
+    width: 400px;
+    margin-top: 130px;
+}
+.hero-img{
+    background-color: #f5f5f5;
+    clip-path: circle();
+}
+
+.hero-text{
+    
+    align-self: center;
+
+}
+.hero-text h1{
+    font-size: 3em;
+    color: #f5f5f5;
+}
+.hero-text h3{
+    font-style: italic;
+}
+.hero-text button{
+    padding: 0.6em;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    color: #1b83ff;
+    font-size: 0.9em;
+   margin-top: 0.5em;
+   margin-right: 0.5em;
+   cursor: pointer;
+}
+
+.hotdeals h1{
+    color: #1b83ff;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.hot-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.book{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.book img{
+    width: 200px;
+
+}
+.book h4{
+    text-align: center;
+}
+
+.book button{
+  margin: 0 auto;
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  color: #1b83ff;
+  cursor: pointer;
+}
+
+.Store-front h1{
+    color: #1b83ff;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.store-list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+
+}
+
+
+.mycart{
+    position: fixed;
+    height: 100%;;
+    top:0;
+    background-color: purple;
+    right: 0;
+    left: 0;
+    
+    z-index: 1;
+    display: none;
+    margin-top: 50px;
+   
+
+}
+.mycart h4{
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.cartitems{
+    display: flex;
+    gap: 1em;
+}
+
+.close-cart{
+    width: 40px;
+    background: none;
+    border: none;
+    color: #f5f5f5;
+    font-size: 2.5em;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+
+    
+}
+
+.Cart-opener{
+    cursor: pointer;
+}
+
+.cart-book{
+    color: #f5f5f5;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.cart-book h4{
+    text-align: center;
+}
+
+
+.visible{
+    display: inline;
+}
+
+.checkout{
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    padding: 0.5em;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #1b83ff;
+}
+
+.Remove{
+    font-weight: 600;
+    color: #1b83ff;
+    padding: 0.5em;
+}

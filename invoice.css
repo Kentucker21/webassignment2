@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    font-size: 2.2em;
+}
+
+body{
+    color: #f5f5f5;
+    background-color: #1b83ff;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+button{
+    padding: 1em;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: #1b83ff;
+    font-weight: 600;
+}
+
+.inner-sum{
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+.item-qty{
+    text-align: center;
+}
+
+.tax{
+    text-align: center;
+    font-size: 1.5em;
+}
+.totalcheckout{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+ul{
+    list-style: none;
+}
